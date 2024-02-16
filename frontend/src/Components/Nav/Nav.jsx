@@ -8,7 +8,7 @@ import { FaUserLarge } from 'react-icons/fa6';
 
 const Nav = () => {
   const { isAuthenticated } = useContext(AuthContext);
-  console.log(isAuthenticated);
+
   return (
     <div className={styles.nav}>     
        <img style={{width:'200px', height:'70px'}}

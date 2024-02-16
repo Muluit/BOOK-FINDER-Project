@@ -37,16 +37,14 @@ const EditBook = () => {
     axios.put("http://localhost:8080/api/books/books/" + id, values)
       .then((res) => { 
         if(!res.data) return;
-        console.log('handleSubm',res.data);
         setIsUpdateFinished(true);
         
       })
       .catch((err) => console.log(err));
       
   };
-  console.log('OutSideUseEf',isUpdateFinished);
+ 
   useEffect (() => {
-    console.log('Inside useEf',isUpdateFinished);
     if(isUpdateFinished) {
       axios.get('http://localhost:8080/api/books/books')
       .then(res => setBookData(res.data))            

@@ -16,7 +16,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   const { isAuthenticated } = useContext(AuthContext);
-console.log('APP',isAuthenticated);
+
   return (
     <div className="App">
       
